@@ -13,7 +13,7 @@ protocol ButtonCartDelegate {
     func failedChange(message: String)
 }
 
-@IBDesignable class QTYButtonView: UIView {
+public class QTYButtonView: UIView {
     @IBOutlet weak var contentView : UIView!
     @IBOutlet weak var buttonAdd: UIButton!
     @IBOutlet weak var buttonPlus: UIButton!
@@ -34,13 +34,13 @@ protocol ButtonCartDelegate {
         commonInit()
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         commonInit()
     }
     
     private func commonInit() {
-        QTYButtons.bundle.loadNibNamed("QTYButtonView", owner: self, options: [:])
+        QTYButton.bundle.loadNibNamed("QTYButtonView", owner: self, options: [:])
         addSubview(contentView)
         contentView.translatesAutoresizingMaskIntoConstraints = false
         contentView.topAnchor.constraint(equalTo: topAnchor).isActive = true
@@ -48,6 +48,7 @@ protocol ButtonCartDelegate {
         contentView.leftAnchor.constraint(equalTo: leftAnchor).isActive = true
         contentView.rightAnchor.constraint(equalTo: rightAnchor).isActive = true
     }
+    
     func setupUI() {
         if text == 0 {
             self.editable(value: false)

@@ -1,5 +1,5 @@
 //
-//  QTYButtons.swift
+//  QTYButtonLib.swift
 //  QTYButtons
 //
 //  Created by Qiscus on 17/11/18.
@@ -8,10 +8,10 @@
 
 import Foundation
 
-class QTYButtons {
+public class QTYButton {
     class var bundle:Bundle{
         get{
-            let podBundle = Bundle(for: QTYButtons.self)
+            let podBundle = Bundle(for: QTYButton.self)
             if let bundleURL = podBundle.url(forResource: "QTYButtons", withExtension: "bundle") {
                 return Bundle(url: bundleURL)!
             }else{
@@ -19,7 +19,4 @@ class QTYButtons {
             }
         }
     }
-    public static let shared : QTYButtons = QTYButtons()
-    
-    
 }

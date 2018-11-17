@@ -4,14 +4,21 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="QTYButtonView" customModule="QTYButtons" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="QTYButtonView" customModule="QTYButtons" customModuleProvider="target">
+            <connections>
+                <outlet property="buttonAdd" destination="mh9-cm-uAg" id="XuL-v7-rwh"/>
+                <outlet property="buttonMin" destination="S5T-LZ-F4e" id="KKD-5S-KEG"/>
+                <outlet property="buttonPlus" destination="6DB-B4-bj9" id="79y-cy-hnR"/>
+                <outlet property="contentView" destination="6Pk-IW-zvw" id="Yoe-Ki-3gP"/>
+                <outlet property="label" destination="kEn-TS-0my" id="GJn-Z3-m9Y"/>
+            </connections>
+        </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="6Pk-IW-zvw">
             <rect key="frame" x="0.0" y="0.0" width="199" height="72"/>
