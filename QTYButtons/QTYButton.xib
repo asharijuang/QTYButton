@@ -5,6 +5,7 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -21,14 +22,18 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="6Pk-IW-zvw">
-            <rect key="frame" x="0.0" y="0.0" width="199" height="72"/>
+            <rect key="frame" x="0.0" y="0.0" width="504" height="203"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S5T-LZ-F4e">
-                    <rect key="frame" x="0.0" y="0.0" width="66.5" height="72"/>
+                    <rect key="frame" x="0.0" y="0.0" width="203.5" height="203"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="S5T-LZ-F4e" secondAttribute="height" id="haZ-j4-eGh"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                     <state key="normal" title="-">
-                        <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
@@ -46,8 +51,8 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6DB-B4-bj9" userLabel="Button Plus">
-                    <rect key="frame" x="132" y="0.0" width="66.5" height="72"/>
-                    <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <rect key="frame" x="301" y="0.0" width="203" height="203"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                     <state key="normal" title="+">
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -68,9 +73,9 @@
                     </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kEn-TS-0my">
-                    <rect key="frame" x="66.5" y="0.0" width="65.5" height="72"/>
+                    <rect key="frame" x="203.5" y="0.0" width="97.5" height="203"/>
                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                    <color key="textColor" red="0.91841644050000004" green="0.4714306593" blue="0.1828082204" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
@@ -85,8 +90,8 @@
                     </userDefinedRuntimeAttributes>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mh9-cm-uAg" userLabel="button Buy">
-                    <rect key="frame" x="66" y="0.0" width="132.5" height="72"/>
-                    <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <rect key="frame" x="168" y="0.0" width="336" height="203"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                     <state key="normal" title="Add">
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -104,7 +109,6 @@
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="mh9-cm-uAg" firstAttribute="top" secondItem="ywA-2g-WQw" secondAttribute="top" id="3o4-ts-hmR"/>
-                <constraint firstItem="S5T-LZ-F4e" firstAttribute="width" secondItem="6Pk-IW-zvw" secondAttribute="width" multiplier="1:3" id="BwT-RR-6Y3"/>
                 <constraint firstItem="mh9-cm-uAg" firstAttribute="bottom" secondItem="ywA-2g-WQw" secondAttribute="bottom" id="Fpy-jY-7Hn"/>
                 <constraint firstItem="6DB-B4-bj9" firstAttribute="leading" secondItem="kEn-TS-0my" secondAttribute="trailing" id="H18-Cc-LvQ"/>
                 <constraint firstItem="kEn-TS-0my" firstAttribute="bottom" secondItem="ywA-2g-WQw" secondAttribute="bottom" id="HQY-B5-xXg"/>
@@ -122,7 +126,7 @@
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="ywA-2g-WQw"/>
-            <point key="canvasLocation" x="-31" y="-103"/>
+            <point key="canvasLocation" x="121" y="-37.5"/>
         </view>
     </objects>
 </document>

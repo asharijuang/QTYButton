@@ -18,17 +18,60 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qp0-l8-FQp" customClass="QTYButton" customModule="QTYButton">
-                                <rect key="frame" x="101" y="308" width="173" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qp0-l8-FQp" customClass="QTYButton" customModule="QTYButton">
+                                <rect key="frame" x="100" y="308" width="175" height="50"/>
+                                <color key="backgroundColor" red="0.21741285860000001" green="0.76113314759999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="IcW-ot-o6t"/>
+                                    <constraint firstAttribute="width" constant="175" id="L82-8N-8Me"/>
+                                </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W4K-5z-HxX" customClass="QTYButton" customModule="QTYButton">
+                                <rect key="frame" x="100" y="392" width="175" height="50"/>
+                                <color key="backgroundColor" red="0.7963279486" green="0.95124286410000003" blue="0.9930242896" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Default" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fpd-UO-YY9">
+                                <rect key="frame" x="100" y="282" width="175" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Custom" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1mO-H1-vsn">
+                                <rect key="frame" x="100" y="366" width="175" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ButtonQTY example :" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fXi-K0-XVh">
+                                <rect key="frame" x="16" y="95" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="fXi-K0-XVh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="75" id="1hg-y5-53U"/>
+                            <constraint firstItem="fXi-K0-XVh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="3LJ-mZ-lng"/>
+                            <constraint firstItem="1mO-H1-vsn" firstAttribute="leading" secondItem="Qp0-l8-FQp" secondAttribute="leading" id="9wN-hv-1ai"/>
+                            <constraint firstItem="W4K-5z-HxX" firstAttribute="leading" secondItem="Qp0-l8-FQp" secondAttribute="leading" id="A2q-QP-ric"/>
+                            <constraint firstItem="Qp0-l8-FQp" firstAttribute="top" secondItem="fpd-UO-YY9" secondAttribute="bottom" constant="8" id="Ck6-px-V1q"/>
+                            <constraint firstItem="Qp0-l8-FQp" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Jg3-Kg-YWC"/>
+                            <constraint firstItem="fpd-UO-YY9" firstAttribute="trailing" secondItem="Qp0-l8-FQp" secondAttribute="trailing" id="MWw-54-xzJ"/>
+                            <constraint firstItem="W4K-5z-HxX" firstAttribute="height" secondItem="Qp0-l8-FQp" secondAttribute="height" id="SYd-sZ-N5h"/>
+                            <constraint firstItem="fpd-UO-YY9" firstAttribute="leading" secondItem="Qp0-l8-FQp" secondAttribute="leading" id="ScQ-P1-F74"/>
+                            <constraint firstItem="1mO-H1-vsn" firstAttribute="top" secondItem="Qp0-l8-FQp" secondAttribute="bottom" constant="8" id="VFE-bh-yDh"/>
+                            <constraint firstItem="Qp0-l8-FQp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YNg-r2-IzX"/>
+                            <constraint firstItem="W4K-5z-HxX" firstAttribute="trailing" secondItem="Qp0-l8-FQp" secondAttribute="trailing" id="i21-Qa-E3S"/>
+                            <constraint firstItem="1mO-H1-vsn" firstAttribute="trailing" secondItem="Qp0-l8-FQp" secondAttribute="trailing" id="j5n-iu-4rd"/>
+                            <constraint firstItem="W4K-5z-HxX" firstAttribute="top" secondItem="1mO-H1-vsn" secondAttribute="bottom" constant="8" id="oaq-E6-w1o"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fXi-K0-XVh" secondAttribute="trailing" constant="16" id="sPi-KG-uzA"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="ButtonQuantity" destination="Qp0-l8-FQp" id="DoE-h8-DBH"/>
+                        <outlet property="buttonQTY" destination="Qp0-l8-FQp" id="5QV-af-N8S"/>
+                        <outlet property="buttonQuantity" destination="W4K-5z-HxX" id="DuN-Qa-8Ua"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

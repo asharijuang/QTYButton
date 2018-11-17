@@ -11,13 +11,19 @@ import QTYButton
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var ButtonQuantity: QTYButton!
+    @IBOutlet weak var buttonQuantity: QTYButton!
     
+    @IBOutlet weak var buttonQTY: QTYButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        ButtonQuantity.backgroundColor = UIColor.red
-        
+        buttonQuantity.text = 5
+        print("default value \(buttonQuantity.text)")
+        buttonQuantity.onChange { (value) in
+            print("Quantity Change: \(value)")
+        }
+     
+        self.customButton()
     }
 
     override func didReceiveMemoryWarning() {
@@ -25,6 +31,12 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    func customButton() {
+        // Custom Component
+        buttonQuantity.buttonMin.backgroundColor    = UIColor.red
+        buttonQuantity.buttonPlus.backgroundColor   = UIColor.green
+        buttonQuantity.buttonAdd.backgroundColor    = UIColor.green
+        buttonQuantity.label.textColor              = UIColor.green
+    }
 }
 

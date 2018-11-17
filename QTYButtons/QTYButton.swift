@@ -8,11 +8,6 @@
 
 import UIKit
 
-protocol ButtonCartDelegate {
-    func changeValue(text: Int)
-    func failedChange(message: String)
-}
-
 public class QTYButton: UIView {
     class var bundle:Bundle{
         get{
@@ -26,13 +21,14 @@ public class QTYButton: UIView {
     }
     
     @IBOutlet weak var contentView : UIView!
-    @IBOutlet weak var buttonAdd: UIButton!
-    @IBOutlet weak var buttonPlus: UIButton!
-    @IBOutlet weak var label: UILabel!
-    @IBOutlet weak var buttonMin: UIButton!
-    var delegate : ButtonCartDelegate?
+    @IBOutlet weak public var buttonAdd: UIButton!
+    @IBOutlet weak public var buttonPlus: UIButton!
+    @IBOutlet weak public var label: UILabel!
+    @IBOutlet weak public var buttonMin: UIButton!
     
-    var text: Int = 0 {
+    private var onChange : (Int) -> Void = { _ in }
+    
+    public var text: Int = 0 {
         didSet {
             if label != nil {
                 self.setupUI()
@@ -67,7 +63,7 @@ public class QTYButton: UIView {
             self.editable(value: true)
         }
         self.label.text = String(describing: text)
-        self.delegate?.changeValue(text: text)
+        self.onChange(Int(text))
     }
     
     func editable(value: Bool) {
@@ -90,5 +86,13 @@ public class QTYButton: UIView {
     
     @IBAction func clickMin(_ sender: Any) {
         self.text = self.text - 1
+    }
+}
+
+extension QTYButton {
+    public func onChange(value: @escaping (Int) -> Void) {
+        self.onChange = { qty in
+            value(qty)
+        }
     }
 }
