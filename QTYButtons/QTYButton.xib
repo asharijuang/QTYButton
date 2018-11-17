@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="QTYButtonView" customModule="QTYButtons" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="QTYButton" customModule="QTYButtons" customModuleProvider="target">
             <connections>
                 <outlet property="buttonAdd" destination="mh9-cm-uAg" id="XuL-v7-rwh"/>
                 <outlet property="buttonMin" destination="S5T-LZ-F4e" id="KKD-5S-KEG"/>
@@ -41,6 +41,9 @@
                             <real key="value" value="5"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="clickMin:" destination="-1" eventType="touchUpInside" id="cMq-sb-qkr"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6DB-B4-bj9" userLabel="Button Plus">
                     <rect key="frame" x="132" y="0.0" width="66.5" height="72"/>
@@ -60,6 +63,9 @@
                             <real key="value" value="5"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="clickAdd:" destination="-1" eventType="touchUpInside" id="gGY-t8-NTc"/>
+                    </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kEn-TS-0my">
                     <rect key="frame" x="66.5" y="0.0" width="65.5" height="72"/>
@@ -90,6 +96,9 @@
                             <real key="value" value="5"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="clickBuy:" destination="-1" eventType="touchUpInside" id="YfU-aQ-oQt"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

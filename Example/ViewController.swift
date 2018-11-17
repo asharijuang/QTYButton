@@ -11,12 +11,13 @@ import QTYButton
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var ButtonQuantity: QTYButtonView!
+    @IBOutlet weak var ButtonQuantity: QTYButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         ButtonQuantity.backgroundColor = UIColor.red
+        
     }
 
     override func didReceiveMemoryWarning() {

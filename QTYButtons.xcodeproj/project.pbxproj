@@ -10,14 +10,13 @@
 		3DA79E78219FF5A800EEDE72 /* QTYButtons.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DA79E6E219FF5A800EEDE72 /* QTYButtons.framework */; };
 		3DA79E7D219FF5A800EEDE72 /* QTYButtonsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA79E7C219FF5A800EEDE72 /* QTYButtonsTests.swift */; };
 		3DA79E7F219FF5A800EEDE72 /* QTYButtons.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DA79E71219FF5A800EEDE72 /* QTYButtons.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3DA79E8B219FF63700EEDE72 /* QTYButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA79E8A219FF63700EEDE72 /* QTYButtonView.swift */; };
-		3DA79E8D219FF64B00EEDE72 /* QTYButtonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DA79E8C219FF64B00EEDE72 /* QTYButtonView.xib */; };
+		3DA79E8B219FF63700EEDE72 /* QTYButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA79E8A219FF63700EEDE72 /* QTYButton.swift */; };
+		3DA79E8D219FF64B00EEDE72 /* QTYButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DA79E8C219FF64B00EEDE72 /* QTYButton.xib */; };
 		3DFCAB85219FF990007C63A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFCAB84219FF990007C63A5 /* AppDelegate.swift */; };
 		3DFCAB87219FF990007C63A5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFCAB86219FF990007C63A5 /* ViewController.swift */; };
 		3DFCAB8A219FF990007C63A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DFCAB88219FF990007C63A5 /* Main.storyboard */; };
 		3DFCAB8C219FF992007C63A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DFCAB8B219FF992007C63A5 /* Assets.xcassets */; };
 		3DFCAB8F219FF992007C63A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DFCAB8D219FF992007C63A5 /* LaunchScreen.storyboard */; };
-		3DFCAB97219FFDEE007C63A5 /* QTYButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFCAB96219FFDEE007C63A5 /* QTYButton.swift */; };
 		9D509E3C5B5273DB3540CFF4 /* Pods_QTYButtons.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8810B81A6A9FC35B6720BDCB /* Pods_QTYButtons.framework */; };
 		9F75A01D3A264711D390F830 /* Pods_QTYButtonsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB247F3D8BE0245A6FEFF776 /* Pods_QTYButtonsTests.framework */; };
 		EB57C41165C2D8E201AF701E /* Pods_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A25508300F8E91B274170CD2 /* Pods_Example.framework */; };
@@ -42,8 +41,8 @@
 		3DA79E77219FF5A800EEDE72 /* QTYButtonsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QTYButtonsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DA79E7C219FF5A800EEDE72 /* QTYButtonsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QTYButtonsTests.swift; sourceTree = "<group>"; };
 		3DA79E7E219FF5A800EEDE72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3DA79E8A219FF63700EEDE72 /* QTYButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QTYButtonView.swift; sourceTree = "<group>"; };
-		3DA79E8C219FF64B00EEDE72 /* QTYButtonView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QTYButtonView.xib; sourceTree = "<group>"; };
+		3DA79E8A219FF63700EEDE72 /* QTYButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QTYButton.swift; sourceTree = "<group>"; };
+		3DA79E8C219FF64B00EEDE72 /* QTYButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QTYButton.xib; sourceTree = "<group>"; };
 		3DFCAB82219FF990007C63A5 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DFCAB84219FF990007C63A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3DFCAB86219FF990007C63A5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -51,7 +50,6 @@
 		3DFCAB8B219FF992007C63A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3DFCAB8E219FF992007C63A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3DFCAB90219FF992007C63A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3DFCAB96219FFDEE007C63A5 /* QTYButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QTYButton.swift; sourceTree = "<group>"; };
 		709875CF338284DA3EFBA0CE /* Pods-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Example/Pods-Example.debug.xcconfig"; sourceTree = "<group>"; };
 		724FB9D7EF7F55D1E4FCBF53 /* Pods-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-Example/Pods-Example.release.xcconfig"; sourceTree = "<group>"; };
 		8810B81A6A9FC35B6720BDCB /* Pods_QTYButtons.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QTYButtons.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -129,9 +127,8 @@
 			isa = PBXGroup;
 			children = (
 				3DA79E71219FF5A800EEDE72 /* QTYButtons.h */,
-				3DFCAB96219FFDEE007C63A5 /* QTYButton.swift */,
-				3DA79E8A219FF63700EEDE72 /* QTYButtonView.swift */,
-				3DA79E8C219FF64B00EEDE72 /* QTYButtonView.xib */,
+				3DA79E8A219FF63700EEDE72 /* QTYButton.swift */,
+				3DA79E8C219FF64B00EEDE72 /* QTYButton.xib */,
 				3DA79E72219FF5A800EEDE72 /* Info.plist */,
 			);
 			path = QTYButtons;
@@ -287,7 +284,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3DA79E8D219FF64B00EEDE72 /* QTYButtonView.xib in Resources */,
+				3DA79E8D219FF64B00EEDE72 /* QTYButton.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,8 +387,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3DFCAB97219FFDEE007C63A5 /* QTYButton.swift in Sources */,
-				3DA79E8B219FF63700EEDE72 /* QTYButtonView.swift in Sources */,
+				3DA79E8B219FF63700EEDE72 /* QTYButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
