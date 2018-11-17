@@ -8,7 +8,7 @@ DESC
 s.homepage     = "http://asharijuang.github.io"
 s.license      = "MIT"
 s.author       = "Ashari Juang"
-s.source       = { :git => "https://github.com/kodejs/qtybuttons.git", :tag => "#{s.version}" }
+s.source       = { :git => "https://github.com/asharijuang/qtybutton.git", :tag => "#{s.version}" }
 s.platform      = :ios, "9.0"
 s.source_files  = "QTYButtons/**/*.{swift}"
 s.resource_bundles = {
