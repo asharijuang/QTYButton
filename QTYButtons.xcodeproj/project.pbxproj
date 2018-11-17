@@ -10,6 +10,9 @@
 		3DA79E78219FF5A800EEDE72 /* QTYButtons.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DA79E6E219FF5A800EEDE72 /* QTYButtons.framework */; };
 		3DA79E7D219FF5A800EEDE72 /* QTYButtonsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA79E7C219FF5A800EEDE72 /* QTYButtonsTests.swift */; };
 		3DA79E7F219FF5A800EEDE72 /* QTYButtons.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DA79E71219FF5A800EEDE72 /* QTYButtons.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3DA79E89219FF5DC00EEDE72 /* QTYButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA79E88219FF5DC00EEDE72 /* QTYButtons.swift */; };
+		3DA79E8B219FF63700EEDE72 /* QTYButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA79E8A219FF63700EEDE72 /* QTYButtonView.swift */; };
+		3DA79E8D219FF64B00EEDE72 /* QTYButtonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DA79E8C219FF64B00EEDE72 /* QTYButtonView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +32,9 @@
 		3DA79E77219FF5A800EEDE72 /* QTYButtonsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QTYButtonsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DA79E7C219FF5A800EEDE72 /* QTYButtonsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QTYButtonsTests.swift; sourceTree = "<group>"; };
 		3DA79E7E219FF5A800EEDE72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DA79E88219FF5DC00EEDE72 /* QTYButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QTYButtons.swift; sourceTree = "<group>"; };
+		3DA79E8A219FF63700EEDE72 /* QTYButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QTYButtonView.swift; sourceTree = "<group>"; };
+		3DA79E8C219FF64B00EEDE72 /* QTYButtonView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QTYButtonView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +78,9 @@
 			isa = PBXGroup;
 			children = (
 				3DA79E71219FF5A800EEDE72 /* QTYButtons.h */,
+				3DA79E88219FF5DC00EEDE72 /* QTYButtons.swift */,
+				3DA79E8A219FF63700EEDE72 /* QTYButtonView.swift */,
+				3DA79E8C219FF64B00EEDE72 /* QTYButtonView.xib */,
 				3DA79E72219FF5A800EEDE72 /* Info.plist */,
 			);
 			path = QTYButtons;
@@ -148,6 +157,7 @@
 				TargetAttributes = {
 					3DA79E6D219FF5A800EEDE72 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
 					};
 					3DA79E76219FF5A800EEDE72 = {
 						CreatedOnToolsVersion = 9.4.1;
@@ -177,6 +187,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DA79E8D219FF64B00EEDE72 /* QTYButtonView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,6 +205,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DA79E89219FF5DC00EEDE72 /* QTYButtons.swift in Sources */,
+				3DA79E8B219FF63700EEDE72 /* QTYButtonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +352,7 @@
 		3DA79E83219FF5A800EEDE72 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -356,6 +370,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.qiscusdev.QTYButtons;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -364,6 +379,7 @@
 		3DA79E84219FF5A800EEDE72 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -389,6 +405,7 @@
 		3DA79E86219FF5A800EEDE72 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QG8KA4P8TE;
 				INFOPLIST_FILE = QTYButtonsTests/Info.plist;
@@ -407,6 +424,7 @@
 		3DA79E87219FF5A800EEDE72 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QG8KA4P8TE;
 				INFOPLIST_FILE = QTYButtonsTests/Info.plist;
