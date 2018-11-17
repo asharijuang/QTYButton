@@ -1,7 +1,7 @@
 # [QTYButton](https://github.com/asharijuang/QTYButton) - Quantity Button to shoping cart
 
 
-![QTYButton: Quantity Button to shoping cart](https://raw.githubusercontent.com/asharijuang/QTYButton/master/Preview/qtybutton.png)
+![QTYButton: Quantity Button to shoping cart](https://raw.githubusercontent.com/asharijuang/QTYButton/master/preview.png)
 
 ## Features
 
